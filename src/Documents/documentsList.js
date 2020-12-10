@@ -4,17 +4,26 @@ import ErrorBoundary from '../App/errorBoundary'
 import Spinner from '../App/spinner'
 import {useSearchStore} from '../App/stores'
 import useScrollPos from '../App/useScrollPos'
-import Document from './document'
-import documents from '../data.json'
+import {Flex} from '../Primitives'
+import Document from './newDocument'
 
-const DocumentsList = () => {
+const DocumentsList = show => {
+  const documents = useSearchStore(state => state.data)
+  console.log(documents)
   useScrollPos(false)
   return (
     <ErrorBoundary>
       <Suspense fallback={<Spinner />}>
-        {documents.map((document, index) => (
-          <Document index={index} document={document} key={index} />
-        ))}
+        <Flex
+          sx={{
+            flexDirection: 'column',
+            gap: 4,
+          }}
+        >
+          {documents.map((document, index) => (
+            <Document index={index} document={document} key={index} />
+          ))}
+        </Flex>
       </Suspense>
     </ErrorBoundary>
   )

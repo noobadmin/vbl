@@ -57,8 +57,13 @@ const Document = ({document, index}) => {
     <Spinner />
   ) : (
     <S.Layout>
-      <S.Image src={document.img} />
-      <S.Main>
+      <S.Main
+        sx={{
+          backgroundImage: `url('/images/${document.image}')`,
+          alignItems: 'flex-end',
+          height: '40rem',
+        }}
+      >
         <HeadingLink pid={index} title={document.title} />
         {/* <S.Keywords keywords={document.keywords} /> */}
         {/* <SummaryText summary={document.summary} /> */}
@@ -86,7 +91,7 @@ S.Layout = styled(Box).attrs({
     display: none;
   }
 `
-S.Main = styled(Box).attrs({
+S.Main = styled(Flex).attrs({
   p: 3,
 })``
 S.MetaList = styled(Box).attrs({

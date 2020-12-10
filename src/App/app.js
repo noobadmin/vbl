@@ -19,16 +19,22 @@ const App = () => {
   return (
     <ThemeProvider theme={dark}>
       <Global />
-      <Box as="nav" sx={{position: 'sticky', top: 0}}>
+      <Box mb={[2, 3, 3, 4]} as="nav" sx={{position: 'sticky', top: 0}}>
         <Navigation />
       </Box>
-      <ErrorBoundary>
-        <Suspense fallback={<Spinner />}>
-          <Route exact path="/" component={DocumentsPage} />
-          <Route exact path="/documents" component={DocumentsPage} />
-          <Route exact path="/documents/:documentId" component={DocumentPage} />
-        </Suspense>
-      </ErrorBoundary>
+      <Box mx={[0, 2, 3, 4]}>
+        <ErrorBoundary>
+          <Suspense fallback={<Spinner />}>
+            <Route exact path="/" component={DocumentsPage} />
+            <Route exact path="/documents" component={DocumentsPage} />
+            <Route
+              exact
+              path="/documents/:documentId"
+              component={DocumentPage}
+            />
+          </Suspense>
+        </ErrorBoundary>
+      </Box>
     </ThemeProvider>
   )
 }

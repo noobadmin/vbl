@@ -2,7 +2,8 @@ import React from 'react'
 
 import styled from 'styled-components'
 
-import {Box, Card, Heading, Image, Link, Text, Flex} from '../Primitives'
+import {ifArray, parseDate} from '../App/helpers'
+import {Box, Card, Image, Link, Text, Flex} from '../Primitives'
 
 const Details = props => <S.Details>{props.children}</S.Details>
 const Detail = props => (
@@ -15,24 +16,33 @@ const Detail = props => (
 const Document = ({data}) => {
   return (
     <Box>
-      <Heading>{data.title}</Heading>
-      {/* <Card m={0} mb={2} p={2}> */}
-      {/*   <Text fontWeight="bold">Description</Text> */}
-      {/*   <Text>{data.summary}</Text> */}
-      {/* </Card> */}
-      {/* <Details> */}
-      {/*   <Detail caption="Citation"> */}
-      {/*     <Link to={'http://doi.org/' + data.doi} target="_blank"> */}
-      {/*       {data.citation} */}
-      {/*     </Link> */}
-      {/*   </Detail> */}
-      {/*   <Detail caption="Keywords"> */}
-      {/*     {data.keywords.map(keyword => keyword + ', ')} */}
-      {/*   </Detail> */}
-      {/*   <Detail caption="Type">{data.type}</Detail> */}
-      {/*   <Detail caption="Author">{data.members[0]?.person.fullName}</Detail> */}
-      {/*   <Detail caption="Other">Stuff</Detail> */}
-      {/* </Details> */}
+      <Card m={0} mb={2} p={2}>
+        <Text fontWeight="bold">Description</Text>
+        <Text>{data.description}</Text>
+      </Card>
+      <Details>
+        <Detail caption="Data Type">{data.datatype}</Detail>
+        <Detail caption="Dataset Size">{data.datasetsize}</Detail>
+        <Detail caption="App Size">{data.appsize}</Detail>
+        <Detail caption="Simulation Code">{data.simulationcode}</Detail>
+        <Detail caption="Author">{ifArray(data.authors)}</Detail>
+        <Detail caption="Institute of Origin">{data.instituteoforigin}</Detail>
+        <Detail caption="Original Format">{data.originalformat}</Detail>
+        <Detail caption="Dimensions">{data.dimensions}</Detail>
+        <Detail caption="Data Created">{parseDate(data.datacreated)}</Detail>
+        <Detail caption="Visualisation Created">
+          {parseDate(data.viscreated)}
+        </Detail>
+        <Detail caption="Last Update">{parseDate(data.lastupdate)}</Detail>
+        <Detail caption="Visualisation Type">{ifArray(data.vistype)}</Detail>
+        <Detail caption="Visualisation Method">
+          {ifArray(data.vismethod)}
+        </Detail>
+        <Detail caption="Keywords">{ifArray(data.keywords)}</Detail>
+        <Detail caption="Visualisation Link">
+          <Link href={data.vbllink}> {data.vbllink}</Link>
+        </Detail>
+      </Details>
     </Box>
   )
 }
@@ -74,11 +84,11 @@ S.Detail = styled(Card).attrs({
   sx: {
     display: 'grid',
     gridTemplateColumns: '25% 1fr',
-    gridGap: '1px',
+    gridGap: '0.3rem',
     bg: 'background',
     p: 0,
     m: 0,
-    my: '1px',
+    my: '0.3rem',
   },
 })``
 S.Text = styled(Text).attrs({

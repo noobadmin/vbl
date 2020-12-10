@@ -9,7 +9,7 @@ import {Button, Box, Flex, Heading} from '../Primitives'
 import Search from '../Search/search'
 
 const DocumentsPage = props => {
-  const [show, setShow] = useState()
+  const [show, setShow] = useState(false)
 
   return (
     <ErrorBoundary>
@@ -19,7 +19,7 @@ const DocumentsPage = props => {
             <Search />
           </Side>
           <Main show={!show}>
-            <Heading>Documents</Heading>
+            <Heading>Library</Heading>
             <DocumentsList show={!show} />
           </Main>
         </Layout>
@@ -64,7 +64,7 @@ const Main = styled(Box).attrs({
 display: ${({show}) => (show ? 'block' : 'none')};
 `
 const Side = styled(Box).attrs({
-  width: 1 / 5,
+  width: [1, 1, 1 / 5],
   display: ['none', 'none', 'block'],
 })`
 @media (max-width: ${({theme}) => theme.breakpoints[1]}) {

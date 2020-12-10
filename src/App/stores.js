@@ -1,5 +1,7 @@
 import create from 'zustand'
 
+import data from '../data.json'
+
 const query = {
   include: [
     {
@@ -31,9 +33,8 @@ export const useDocumentsStore = create(set => ({
 }))
 
 export const useSearchStore = create(set => ({
-  query,
-  setQuery: object => set(() => ({query: object})),
-  resetQuery: () => set(() => ({query})),
+  data,
+  setData: object => set(() => ({data: object})),
 }))
 
 export const useDatasetStore = create(set => ({

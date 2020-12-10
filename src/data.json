@@ -2,30 +2,36 @@
     {
         "vblname": "XFEL-exp-data",
         "vbllink": "http://vbl.eli-beams.eu/apps/XFEL-exp-data/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "experimental",
         "dimensions": "2D",
         "instituteoforigin": "XFEL",
         "simulationcode": "-",
         "authors": "tbd",
-        "keywords": "tbd",
+        "keywords": [
+            "tbd",
+            ""
+        ],
         "originalformat": ".h5",
         "description": "tbd",
-        "title": "tbd",
+        "title": "EU XFEL Experimental Data Sample",
         "appsize": "tbd",
         "datasetsize": "tbd",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "tbd",
         "viscreated": "2019-05-31T22:00:00.000Z",
-        "lastupdate": "2020-10-01T22:00:00.000Z"
+        "lastupdate": "2020-10-01T22:00:00.000Z",
+        "image": "32.jpg"
     },
     {
         "vblname": "2D-PIC-Petr",
         "vbllink": "http://vbl.eli-beams.eu/apps/2D-PIC-Petr/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -33,42 +39,57 @@
         "authors": "P. Valenta",
         "keywords": "tbd",
         "originalformat": ".vtk",
-        "description": "This simulation represents intense laser beam focused on the rear side of the plasma target. Plasma is made of two types of particles - electrons and protons. In particle-in-cell simulations, we use macro-particles, where 1 macro-particle represents many real particles. Here you can see only electrons, protons are not interesting in this case since their weight is much higher (and therefore they do not move). Behind the laser pulse, plasma waves are excited (density spikes moving with the group velocity of the laser beam). Under certain conditions, electrons may be trapped inside the wave and accelerated (this is called laser-wakefield acceleration - LWFA).",
+        "description": [
+            "This simulation represents intense laser beam focused on the rear side of the plasma target. Plasma is made of two types of particles - electrons and protons. In particle-in-cell simulations",
+            " we use macro-particles",
+            " where 1 macro-particle represents many real particles. Here you can see only electrons",
+            " protons are not interesting in this case since their weight is much higher (and therefore they do not move). Behind the laser pulse",
+            " plasma waves are excited (density spikes moving with the group velocity of the laser beam). Under certain conditions",
+            " electrons may be trapped inside the wave and accelerated (this is called laser-wakefield acceleration - LWFA)."
+        ],
         "title": "Wake Wave Generation",
         "appsize": "400 MB",
         "datasetsize": "2 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2017-11-30T23:00:00.000Z",
         "viscreated": "2017-11-30T23:00:00.000Z",
-        "lastupdate": "2020-10-02T22:00:00.000Z"
+        "lastupdate": "2020-10-02T22:00:00.000Z",
+        "image": "11.jpg"
     },
     {
         "vblname": "3D Spectrum Visualizations",
         "vbllink": "https://mybinder.org/v2/gh/MariDani/exp_data_vis/master?filepath=notebooks%2F3D_spectrum-plotly.ipynb",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "experimental",
+        "dimensions": "3D",
         "instituteoforigin": "ELI Beamlines",
         "simulationcode": "-",
         "authors": "tbd",
         "keywords": "tbd",
         "originalformat": ".txt",
         "description": "tbd",
-        "title": "tbd",
+        "title": "Vanadium X-rays Created Using L3 Laser ",
         "appsize": "tbd",
         "datasetsize": "tbd",
         "vistype": "Jupyter notebook",
-        "vismethod": "Jupyter, Plotly",
+        "vismethod": [
+            "Jupyter",
+            "Plotly"
+        ],
         "datacreated": "tbd",
         "viscreated": "2020-06-30T22:00:00.000Z",
-        "lastupdate": "2020-10-03T22:00:00.000Z"
+        "lastupdate": "2020-10-03T22:00:00.000Z",
+        "image": "34.png"
     },
     {
         "vblname": "Optical Spectroscopy",
         "vbllink": "https://mybinder.org/v2/gh/MariDani/exp_data_vis/master?filepath=notebooks%2FOptical_spectroscopy-matplotlib.ipynb",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "experimental",
         "dimensions": "tbd",
         "instituteoforigin": "ELI Beamlines",
@@ -77,19 +98,23 @@
         "keywords": "optical spectroscopy",
         "originalformat": ".dat",
         "description": "tbd",
-        "title": "tbd",
+        "title": "Optical Spectroscopy Experimental Data - Jupyter",
+        "appsize": "tbd",
         "datasetsize": "3 MB",
         "vistype": "Jupyter notebook",
-        "vismethod": "Jupyter, Matplotlib",
+        "vismethod": [
+            "Jupyter",
+            "Matplotlib"
+        ],
         "datacreated": "2017-11-30T23:00:00.000Z",
         "viscreated": "2020-06-30T22:00:00.000Z",
-        "lastupdate": "2020-10-04T22:00:00.000Z"
+        "lastupdate": "2020-10-04T22:00:00.000Z",
+        "image": "35.png"
     },
     {
         "vblname": "Optical Spectroscopy",
         "vbllink": "http://vbl.eli-beams.eu/apps/spectroscopy/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "experimental",
         "dimensions": "tbd",
         "instituteoforigin": "ELI Beamlines",
@@ -98,42 +123,49 @@
         "keywords": "optical spectroscopy",
         "originalformat": ".dat",
         "description": "tbd",
-        "title": "tbd",
+        "title": "Optical Spectroscopy Experimental Data - D3",
         "appsize": "90 MB",
         "datasetsize": "3 MB",
         "vistype": "interactive",
         "vismethod": "d3",
         "datacreated": "2017-11-30T23:00:00.000Z",
         "viscreated": "2017-12-31T23:00:00.000Z",
-        "lastupdate": "2017-12-31T23:00:00.000Z"
+        "lastupdate": "2017-12-31T23:00:00.000Z",
+        "image": "04.jpg"
     },
     {
         "vblname": "mm-track",
         "vbllink": "http://vbl.eli-beams.eu/apps/mm-track/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
         "simulationcode": "EPOCH",
         "authors": "M. Matys",
-        "keywords": "proton acceleration, hydrogen target",
+        "keywords": [
+            "proton acceleration",
+            "hydrogen target"
+        ],
         "originalformat": ".h5",
         "description": "2D particle-in-cell simulation of the interaction of high-intensity laser pulse (parameters are relevant to L4 laser) with a cryogenic hydrogen target. Only protons with energy above 300 MeV at the end of the simulation are tracked and their position and energy are visualized. Two different groups of protons accelerated by different mechanisms can be distinguished from each other in space: Protons originated from the target interior and from the target rear side.",
         "title": "Laser-Driven Proton Acceleration from Cryogenic Hydrogen Target",
         "appsize": "1 GB",
         "datasetsize": "1.2 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-09-30T22:00:00.000Z",
         "viscreated": "2018-09-30T22:00:00.000Z",
-        "lastupdate": "2020-10-05T22:00:00.000Z"
+        "lastupdate": "2020-10-05T22:00:00.000Z",
+        "image": "19.jpg"
     },
     {
         "vblname": "mj-kaskada",
         "vbllink": "http://vbl.eli-beams.eu/apps/mj-kaskada/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "GoLP",
@@ -141,21 +173,28 @@
         "authors": "M. Jirka",
         "keywords": "tbd",
         "originalformat": ".h5",
-        "description": "OSIRIS 2D PIC simulation of gamma radiation and electron-positron pair production in a head-on collision of ultra-intense laser pulse (2.5 x 1023 W/cm2, 150 fs) with 3.9 GeV electron beam previously accelerated within the plasma channel.",
+        "description": [
+            "OSIRIS 2D PIC simulation of gamma radiation and electron-positron pair production in a head-on collision of ultra-intense laser pulse (2.5 x 1023 W/cm2",
+            " 150 fs) with 3.9 GeV electron beam previously accelerated within the plasma channel."
+        ],
         "title": "Electron-Positron Pair Generation",
         "appsize": "3.4 GB",
         "datasetsize": "200 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-09-30T22:00:00.000Z",
         "viscreated": "2018-09-30T22:00:00.000Z",
-        "lastupdate": "2020-10-31T23:00:00.000Z"
+        "lastupdate": "2020-10-31T23:00:00.000Z",
+        "image": "23.png"
     },
     {
         "vblname": "elimaia-monte-carlo",
         "vbllink": "http://vbl.eli-beams.eu/apps/elimaia-monte-carlo/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "3D",
         "instituteoforigin": "ELI Beamlines",
@@ -163,21 +202,31 @@
         "authors": "tbd",
         "keywords": "tbd",
         "originalformat": ".csv",
-        "description": "Monte Carlo is a powerful simulation approach, able to reproduce in a very realistic mode, how particle propagates. Thanks to this capability, we took the output from laser-target interaction and then transported them along the ELIMED beamline. Particles traverse the entire beamline and then reach the final beamline section, where samples irradiation with this beams will occur. Here the simulation is able to calculate the dose deposited by primary particles and secondary. Transported particle along the beamline interact with the other elements and with the air generating secondary particles: the simulation is performed with the Gean4 simulation toolkit.",
+        "description": [
+            "Monte Carlo is a powerful simulation approach",
+            " able to reproduce in a very realistic mode",
+            " how particle propagates. Thanks to this capability",
+            " we took the output from laser-target interaction and then transported them along the ELIMED beamline. Particles traverse the entire beamline and then reach the final beamline section",
+            " where samples irradiation with this beams will occur. Here the simulation is able to calculate the dose deposited by primary particles and secondary. Transported particle along the beamline interact with the other elements and with the air generating secondary particles: the simulation is performed with the Gean4 simulation toolkit."
+        ],
         "title": "ELIMAIA Ion Acceleration - Monte Carlo",
         "appsize": "100 MB",
         "datasetsize": "150 MB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2017-06-30T22:00:00.000Z",
         "viscreated": "2018-10-31T23:00:00.000Z",
-        "lastupdate": "2020-10-31T23:00:00.000Z"
+        "lastupdate": "2020-10-31T23:00:00.000Z",
+        "image": "21.png"
     },
     {
         "vblname": "mz-elimaia",
         "vbllink": "http://vbl.eli-beams.eu/apps/mz-elimaia/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -185,65 +234,100 @@
         "authors": "M. Zakova Greplova",
         "keywords": "tbd",
         "originalformat": ".h5",
-        "description": "2D particle-in-cell simulation of the interaction of high-intensity laser pulse (parameters are relevant to L3 laser and thus ELIMAIA beamline) with a micrometer-thick flat plastic target. Acceleration of both protons (pink color) and carbon ions (green color), to maximum energy 150 MeV/nucleon and 40 MeV/nucleon, respectively, can be clearly distinguished in the visualization as well as different ion acceleration mechanisms (from the target front side and from its rear side). Such high-energy protons and ions have a great importance for various foreseen applications in Physics, Biology, Medicine, Chemistry, Materials Science, Engineering, and Archaeology.",
+        "description": [
+            "2D particle-in-cell simulation of the interaction of high-intensity laser pulse (parameters are relevant to L3 laser and thus ELIMAIA beamline) with a micrometer-thick flat plastic target. Acceleration of both protons (pink color) and carbon ions (green color)",
+            " to maximum energy 150 MeV/nucleon and 40 MeV/nucleon",
+            " respectively",
+            " can be clearly distinguished in the visualization as well as different ion acceleration mechanisms (from the target front side and from its rear side). Such high-energy protons and ions have a great importance for various foreseen applications in Physics",
+            " Biology",
+            " Medicine",
+            " Chemistry",
+            " Materials Science",
+            " Engineering",
+            " and Archaeology."
+        ],
         "title": "Laser-Driven Ion Acceleration from Plastic Target",
         "appsize": "1.7 GB",
         "datasetsize": "7.5 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-10-31T23:00:00.000Z",
         "viscreated": "2018-10-31T23:00:00.000Z",
-        "lastupdate": "2020-07-31T22:00:00.000Z"
+        "lastupdate": "2020-07-31T22:00:00.000Z",
+        "image": "22.png"
     },
     {
         "vblname": "ga-turbulence-lines",
         "vbllink": "http://vbl.eli-beams.eu/apps/ga-turbulence-lines/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "GoLP",
         "simulationcode": "OSIRIS",
         "authors": "G. Inchingolo",
-        "keywords": "turbulence, magnetic field",
+        "keywords": [
+            "turbulence",
+            "magnetic field"
+        ],
         "originalformat": ".h5",
-        "description": "Magnetorotational instability (MRI) is a crucial mechanism for the amplification of magnetic fields in accretion disks. The video shows a PIC simulation of the evolution of the magnetic field, from MRI to the final turbulent state. The soundtrack is obtained by modulating the spectrum at different moments of the simulation in order to offer the audio experience of turbulence.",
+        "description": [
+            "Magnetorotational instability (MRI) is a crucial mechanism for the amplification of magnetic fields in accretion disks. The video shows a PIC simulation of the evolution of the magnetic field",
+            " from MRI to the final turbulent state. The soundtrack is obtained by modulating the spectrum at different moments of the simulation in order to offer the audio experience of turbulence."
+        ],
         "title": "Magnetic Field Turbulence",
         "appsize": "1 GB",
         "datasetsize": "24 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-06-30T22:00:00.000Z",
         "viscreated": "2018-11-30T23:00:00.000Z",
-        "lastupdate": "2020-10-31T23:00:00.000Z"
+        "lastupdate": "2020-10-31T23:00:00.000Z",
+        "image": "18.jpg"
     },
     {
         "vblname": "ga-turbulence",
         "vbllink": "http://vbl.eli-beams.eu/apps/ga-turbulence/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "GoLP",
         "simulationcode": "OSIRIS",
         "authors": "G. Inchingolo",
-        "keywords": "turbulence, magnetic field",
+        "keywords": [
+            "turbulence",
+            "magnetic field"
+        ],
         "originalformat": ".h5",
-        "description": "Magnetorotational instability (MRI) is a crucial mechanism for the amplification of magnetic fields in accretion disks. The video shows a PIC simulation of the evolution of the magnetic field, from MRI to the final turbulent state. The soundtrack is obtained by modulating the spectrum at different moments of the simulation in order to offer the audio experience of turbulence.",
+        "description": [
+            "Magnetorotational instability (MRI) is a crucial mechanism for the amplification of magnetic fields in accretion disks. The video shows a PIC simulation of the evolution of the magnetic field",
+            " from MRI to the final turbulent state. The soundtrack is obtained by modulating the spectrum at different moments of the simulation in order to offer the audio experience of turbulence."
+        ],
         "title": "Magnetic Field Turbulence",
         "appsize": "1 GB",
         "datasetsize": "24 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-06-30T22:00:00.000Z",
         "viscreated": "2018-11-30T23:00:00.000Z",
-        "lastupdate": "2020-09-30T22:00:00.000Z"
+        "lastupdate": "2020-09-30T22:00:00.000Z",
+        "image": "17.jpg"
     },
     {
         "vblname": "LWFA-video-Marija",
         "vbllink": "http://vbl.eli-beams.eu/apps/LWFA-video-Marija/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "3D",
         "instituteoforigin": "GoLP",
@@ -251,7 +335,13 @@
         "authors": "M. Vranic",
         "keywords": "tbd",
         "originalformat": ".h5",
-        "description": "This visualization represents Laser Wakefield acceleration, which is driven by an intense laser that propagates through 400 micrometers of plasma. This is a short laser pulse, which one can imagine as a compact ball of light that excites plasma waves during its travel. Some electrons can be lucky enough to \"surf\" a plasma wave. Much like the real surfers, it is important for electrons to have some initial velocity to be able to \"catch\" the wave. Once they start surfing, they can reach very high energies in a short propagation distance.",
+        "description": [
+            "This visualization represents Laser Wakefield acceleration",
+            " which is driven by an intense laser that propagates through 400 micrometers of plasma. This is a short laser pulse",
+            " which one can imagine as a compact ball of light that excites plasma waves during its travel. Some electrons can be lucky enough to \"surf\" a plasma wave. Much like the real surfers",
+            " it is important for electrons to have some initial velocity to be able to \"catch\" the wave. Once they start surfing",
+            " they can reach very high energies in a short propagation distance."
+        ],
         "title": "LWFA - Osiris 3D PIC Simulation",
         "appsize": "5 MB",
         "datasetsize": "200 GB",
@@ -259,13 +349,13 @@
         "vismethod": "Paraview",
         "datacreated": "2017-11-30T23:00:00.000Z",
         "viscreated": "2017-06-30T22:00:00.000Z",
-        "lastupdate": "2018-11-30T23:00:00.000Z"
+        "lastupdate": "2018-11-30T23:00:00.000Z",
+        "image": "12.jpg"
     },
     {
         "vblname": "3D-PIC-Marija",
         "vbllink": "http://vbl.eli-beams.eu/apps/3D-PIC-Marija/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "3D",
         "instituteoforigin": "GoLP",
@@ -273,21 +363,31 @@
         "authors": "M. Vranic",
         "keywords": "tbd",
         "originalformat": ".h5",
-        "description": "This visualization represents Laser Wakefield acceleration, which is driven by an intense laser that propagates through 400 micrometers of plasma. This is a short laser pulse, which one can imagine as a compact ball of light that excites plasma waves during its travel. Some electrons can be lucky enough to \"surf\" a plasma wave. Much like the real surfers, it is important for electrons to have some initial velocity to be able to \"catch\" the wave. Once they start surfing, they can reach very high energies in a short propagation distance.",
+        "description": [
+            "This visualization represents Laser Wakefield acceleration",
+            " which is driven by an intense laser that propagates through 400 micrometers of plasma. This is a short laser pulse",
+            " which one can imagine as a compact ball of light that excites plasma waves during its travel. Some electrons can be lucky enough to \"surf\" a plasma wave. Much like the real surfers",
+            " it is important for electrons to have some initial velocity to be able to \"catch\" the wave. Once they start surfing",
+            " they can reach very high energies in a short propagation distance."
+        ],
         "title": "LWFA - Osiris 3D PIC Simulation",
         "appsize": "1.3 GB",
         "datasetsize": "200 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2017-11-30T23:00:00.000Z",
         "viscreated": "2017-12-31T23:00:00.000Z",
-        "lastupdate": "2019-10-31T23:00:00.000Z"
+        "lastupdate": "2019-10-31T23:00:00.000Z",
+        "image": "10.jpg"
     },
     {
         "vblname": "jirka-photons-video",
         "vbllink": "http://vbl.eli-beams.eu/apps/jirka-photons-video/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -295,7 +395,12 @@
         "authors": "J. Vyskocil",
         "keywords": "tbd",
         "originalformat": ".h5",
-        "description": "Electrons accelerated from a thin foil irradiated by an ultra-intense laser pulse emit energetic photons in the gamma region. The pulse rips electrons out of the initially solid target into the free space in front of it. While the laser pulse still burns through the target, the fast electrons interact with its strong electromagnetic field, producing energetic photons through the process of quantum radiation reaction - a peculiar kind of self-force stemming from higher-order corrections to the Lorentz force only observable in the presence of extremely strong electromagnetic fields, such as those of produced by the ELI lasers.",
+        "description": [
+            "Electrons accelerated from a thin foil irradiated by an ultra-intense laser pulse emit energetic photons in the gamma region. The pulse rips electrons out of the initially solid target into the free space in front of it. While the laser pulse still burns through the target",
+            " the fast electrons interact with its strong electromagnetic field",
+            " producing energetic photons through the process of quantum radiation reaction - a peculiar kind of self-force stemming from higher-order corrections to the Lorentz force only observable in the presence of extremely strong electromagnetic fields",
+            " such as those of produced by the ELI lasers."
+        ],
         "title": "Laser Produced Gamma Rays",
         "appsize": "250 MB",
         "datasetsize": "900 GB",
@@ -303,13 +408,13 @@
         "vismethod": "Paraview",
         "datacreated": "2018-03-31T22:00:00.000Z",
         "viscreated": "2018-05-31T22:00:00.000Z",
-        "lastupdate": "2018-05-31T22:00:00.000Z"
+        "lastupdate": "2018-05-31T22:00:00.000Z",
+        "image": "16.jpg"
     },
     {
         "vblname": "jirka-photons",
         "vbllink": "http://vbl.eli-beams.eu/apps/jirka/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -317,21 +422,30 @@
         "authors": "J. Vyskocil",
         "keywords": "tbd",
         "originalformat": ".h5",
-        "description": "Electrons accelerated from a thin foil irradiated by an ultra-intense laser pulse emit energetic photons in the gamma region. The pulse rips electrons out of the initially solid target into the free space in front of it. While the laser pulse still burns through the target, the fast electrons interact with its strong electromagnetic field, producing energetic photons through the process of quantum radiation reaction - a peculiar kind of self-force stemming from higher-order corrections to the Lorentz force only observable in the presence of extremely strong electromagnetic fields, such as those of produced by the ELI lasers.",
+        "description": [
+            "Electrons accelerated from a thin foil irradiated by an ultra-intense laser pulse emit energetic photons in the gamma region. The pulse rips electrons out of the initially solid target into the free space in front of it. While the laser pulse still burns through the target",
+            " the fast electrons interact with its strong electromagnetic field",
+            " producing energetic photons through the process of quantum radiation reaction - a peculiar kind of self-force stemming from higher-order corrections to the Lorentz force only observable in the presence of extremely strong electromagnetic fields",
+            " such as those of produced by the ELI lasers."
+        ],
         "title": "Laser Produced Gamma Rays",
         "appsize": "6 GB",
         "datasetsize": "900 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-03-31T22:00:00.000Z",
         "viscreated": "2018-03-31T22:00:00.000Z",
-        "lastupdate": "2019-09-30T22:00:00.000Z"
+        "lastupdate": "2019-09-30T22:00:00.000Z",
+        "image": "14.jpg"
     },
     {
         "vblname": "jirka-all",
         "vbllink": "http://vbl.eli-beams.eu/apps/jirka-all/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -339,21 +453,30 @@
         "authors": "J. Vyskocil",
         "keywords": "tbd",
         "originalformat": ".h5",
-        "description": "Electrons accelerated from a thin foil irradiated by an ultra-intense laser pulse emit energetic photons in the gamma region. The pulse rips electrons out of the initially solid target into the free space in front of it. While the laser pulse still burns through the target, the fast electrons interact with its strong electromagnetic field, producing energetic photons through the process of quantum radiation reaction - a peculiar kind of self-force stemming from higher-order corrections to the Lorentz force only observable in the presence of extremely strong electromagnetic fields, such as those of produced by the ELI lasers.",
+        "description": [
+            "Electrons accelerated from a thin foil irradiated by an ultra-intense laser pulse emit energetic photons in the gamma region. The pulse rips electrons out of the initially solid target into the free space in front of it. While the laser pulse still burns through the target",
+            " the fast electrons interact with its strong electromagnetic field",
+            " producing energetic photons through the process of quantum radiation reaction - a peculiar kind of self-force stemming from higher-order corrections to the Lorentz force only observable in the presence of extremely strong electromagnetic fields",
+            " such as those of produced by the ELI lasers."
+        ],
         "title": "Laser Produced Gamma Rays",
         "appsize": "12 GB",
         "datasetsize": "900 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-03-31T22:00:00.000Z",
         "viscreated": "2018-03-31T22:00:00.000Z",
-        "lastupdate": "2019-09-30T22:00:00.000Z"
+        "lastupdate": "2019-09-30T22:00:00.000Z",
+        "image": "15.jpg"
     },
     {
         "vblname": "jv-trajectories",
         "vbllink": "http://vbl.eli-beams.eu/apps/jv-trajectories/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -365,17 +488,21 @@
         "title": "Laser Produced Gamma Rays Trajectories",
         "appsize": "35 MB",
         "datasetsize": "80 MB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-05-31T22:00:00.000Z",
         "viscreated": "2018-05-31T22:00:00.000Z",
-        "lastupdate": "2019-09-30T22:00:00.000Z"
+        "lastupdate": "2019-09-30T22:00:00.000Z",
+        "image": "20.jpg"
     },
     {
         "vblname": "pv-2d-electron-rings",
         "vbllink": "http://vbl.eli-beams.eu/apps/pv-2d-electron-rings/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -391,13 +518,13 @@
         "vismethod": "Paraview",
         "datacreated": "2018-12-31T23:00:00.000Z",
         "viscreated": "2018-12-31T23:00:00.000Z",
-        "lastupdate": "2019-04-30T22:00:00.000Z"
+        "lastupdate": "2019-04-30T22:00:00.000Z",
+        "image": "24.png"
     },
     {
         "vblname": "elimaia-twjgl",
         "vbllink": "http://vbl.eli-beams.eu/apps/elimaia-twjgl/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -406,14 +533,19 @@
         "keywords": "tbd",
         "originalformat": ".csv",
         "description": "-",
-        "title": "-",
+        "title": "ELIMAIA Ion Acceleration - Monte Carlo - Simple",
         "appsize": "70 MB",
         "datasetsize": "70 MB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2017-06-30T22:00:00.000Z",
         "viscreated": "2017-12-31T23:00:00.000Z",
-        "lastupdate": "2018-09-30T22:00:00.000Z"
+        "lastupdate": "2018-09-30T22:00:00.000Z",
+        "image": "08.jpg"
     },
     {
         "vblname": "mm-bunch-video",
@@ -425,7 +557,14 @@
         "instituteoforigin": "ELI Beamlines",
         "simulationcode": "EPOCH",
         "authors": "M. Matys",
-        "keywords": "Ion acceleration, Laser-driven, Plasma, Monoenergetic, Instability, Particle-in-cell simulation",
+        "keywords": [
+            "Ion acceleration",
+            "Laser-driven",
+            "Plasma",
+            "Monoenergetic",
+            "Instability",
+            "Particle-in-cell simulation"
+        ],
         "originalformat": ".h5",
         "description": "2D particle-in-cell simulation of the interaction of high-intensity laser pulse (parameters are relevant to 100 PW class laser) with a double layer deuterium-hydrogen target. The laser pulse initiates instability on the interface between deuterium (blue) and proton (purple to yellow) layers. It results in generation of collimated quasi-monoenergetic proton bunch of high energy (yellow). The bunch can be also recognized in the proton energy spectra near the end of the simulation",
         "title": "Generation of collimated quasi-monoenergetic proton beam",
@@ -435,7 +574,8 @@
         "vismethod": "Paraview",
         "datacreated": "2018-09-30T22:00:00.000Z",
         "viscreated": "2019-01-31T23:00:00.000Z",
-        "lastupdate": "2019-01-31T23:00:00.000Z"
+        "lastupdate": "2019-01-31T23:00:00.000Z",
+        "image": "25.png"
     },
     {
         "vblname": "mm-bunch",
@@ -447,23 +587,34 @@
         "instituteoforigin": "ELI Beamlines",
         "simulationcode": "EPOCH",
         "authors": "M. Matys",
-        "keywords": "Ion acceleration, Laser-driven, Plasma, Monoenergetic, Instability, Particle-in-cell simulation",
+        "keywords": [
+            "Ion acceleration",
+            "Laser-driven",
+            "Plasma",
+            "Monoenergetic",
+            "Instability",
+            "Particle-in-cell simulation"
+        ],
         "originalformat": ".h5",
         "description": "2D particle-in-cell simulation of the interaction of high-intensity laser pulse (parameters are relevant to 100 PW class laser) with a double layer deuterium-hydrogen target. The laser pulse initiates instability on the interface between deuterium (blue) and proton (purple to yellow) layers. It results in generation of collimated quasi-monoenergetic proton bunch of high energy (yellow). The bunch can be also recognized in the proton energy spectra near the end of the simulation",
         "title": "Generation of collimated quasi-monoenergetic proton beam",
         "appsize": "2 GB",
         "datasetsize": "25 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-09-30T22:00:00.000Z",
         "viscreated": "2019-01-31T23:00:00.000Z",
-        "lastupdate": "2020-10-06T22:00:00.000Z"
+        "lastupdate": "2020-10-06T22:00:00.000Z",
+        "image": "30.jpg"
     },
     {
         "vblname": "elimaia-vtkjs",
         "vbllink": "http://vbl.eli-beams.eu/apps/elimaia-vtkjs/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "2D",
         "instituteoforigin": "ELI Beamlines",
@@ -472,20 +623,23 @@
         "keywords": "tbd",
         "originalformat": ".csv",
         "description": "-",
-        "title": "-",
+        "title": "ELIMAIA Ion Acceleration - Monte Carlo - VTKJS",
         "appsize": "130 MB",
         "datasetsize": "70 MB",
-        "vistype": "interactive, 3D",
+        "vistype": [
+            "interactive",
+            "3D"
+        ],
         "vismethod": "vtk-js",
         "datacreated": "2017-06-30T22:00:00.000Z",
         "viscreated": "2017-10-31T23:00:00.000Z",
-        "lastupdate": "2018-08-31T22:00:00.000Z"
+        "lastupdate": "2018-08-31T22:00:00.000Z",
+        "image": "02.jpg"
     },
     {
         "vblname": "fc-star-jets-disks",
         "vbllink": "http://vbl.eli-beams.eu/apps/demo/neutron-star/",
-        "licence": "tbd",
-        "publicationlink": "tbd",
+        "licence": "internal",
         "datatype": "simulation",
         "dimensions": "3D",
         "instituteoforigin": "GoLP",
@@ -493,28 +647,91 @@
         "authors": "F. Cruz",
         "keywords": "tbd",
         "originalformat": ".h5",
-        "description": "Extremely compact astronomical objects such as neutron stars are surrounded by plasmas of electrons and positrons embedded in extreme magnetic fields. This simulation shows the production of a plasma of electrons and positrons (blue-violet dots) in the extremely intense magnetic field (white lines) of a neutron star. The plasma strongly interacts with the field, twisting and stretching it.",
+        "description": [
+            "Extremely compact astronomical objects such as neutron stars are surrounded by plasmas of electrons and positrons embedded in extreme magnetic fields. This simulation shows the production of a plasma of electrons and positrons (blue-violet dots) in the extremely intense magnetic field (white lines) of a neutron star. The plasma strongly interacts with the field",
+            " twisting and stretching it."
+        ],
         "title": "Neutron Star Plasma Environment",
         "appsize": "6 GB",
         "datasetsize": "45 GB",
-        "vistype": "interactive, 3D, VR",
+        "vistype": [
+            "interactive",
+            "3D",
+            "VR"
+        ],
         "vismethod": "vis-commons",
         "datacreated": "2018-12-31T23:00:00.000Z",
         "viscreated": "2018-12-31T23:00:00.000Z",
-        "lastupdate": "2019-09-30T22:00:00.000Z"
+        "lastupdate": "2019-09-30T22:00:00.000Z",
+        "image": "26.png"
     },
     {
         "vblname": "P3 Configurator",
         "vbllink": "http://vbl.eli-beams.eu/apps/P3_web_v0/",
+        "licence": "internal",
         "datatype": "tool",
         "dimensions": "3D",
         "instituteoforigin": "ELI Beamlines",
         "authors": "J. Grosz",
+        "originalformat": ".step",
         "title": "Plasma Physics Platform (P3) Experiment Configurator",
         "appsize": "100 MB",
-        "vistype": "interactive, 3D, tool",
+        "datasetsize": "tbd",
+        "vistype": [
+            "interactive",
+            "3D",
+            "TOOL"
+        ],
         "vismethod": "Unity WebGL",
+        "datacreated": "2019-07-31T22:00:00.000Z",
         "viscreated": "2019-07-31T22:00:00.000Z",
-        "lastupdate": "2020-09-30T22:00:00.000Z"
+        "lastupdate": "2020-09-30T22:00:00.000Z",
+        "image": "31.png"
+    },
+    {
+        "vblname": "Experimental Halls 3D",
+        "vbllink": "http://vbl.eli-beams.eu/apps/iframe.html?url=vbllogin.html",
+        "licence": "internal",
+        "datatype": "3D infrastructure",
+        "dimensions": "3D",
+        "instituteoforigin": "ELI Beamlines",
+        "authors": "J. Grosz",
+        "originalformat": ".step",
+        "title": "Experimental Halls - 3D Infrastructure",
+        "appsize": "tbd",
+        "datasetsize": "tbd",
+        "vistype": [
+            "interactive",
+            "3D",
+            "visualization"
+        ],
+        "vismethod": "WebGL",
+        "datacreated": "2018-05-31T22:00:00.000Z",
+        "viscreated": "2018-05-31T22:00:00.000Z",
+        "lastupdate": "2019-05-31T22:00:00.000Z",
+        "image": "29.jpg"
+    },
+    {
+        "vblname": "ELIMAIA 3D webgl",
+        "vbllink": "http://vbl.eli-beams.eu/apps/iframe.html?url=vbllogin-2.html",
+        "licence": "internal",
+        "datatype": "3D infrastructure",
+        "dimensions": "3D",
+        "instituteoforigin": "ELI Beamlines",
+        "authors": "J. Grosz",
+        "originalformat": ".step",
+        "title": "Experimental Halls - ELIMAIA Infrastructure",
+        "appsize": "tbd",
+        "datasetsize": "tbd",
+        "vistype": [
+            "interactive",
+            "3D",
+            "visualization"
+        ],
+        "vismethod": "WebGL",
+        "datacreated": "2018-06-01T22:00:00.000Z",
+        "viscreated": "2018-06-01T22:00:00.000Z",
+        "lastupdate": "2019-06-01T22:00:00.000Z",
+        "image": "33.png"
     }
 ]

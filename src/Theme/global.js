@@ -7,13 +7,15 @@ const GlobalStyle = createGlobalStyle(
     body: {
       backgroundColor: 'background',
       color: 'text',
-      fontSize: [0, 1, 1, 2, 2],
+      fontSize: [0, 1],
       fontFamily: 'body',
     },
     html: {
       fontSize: '10px',
     },
-    ':root': {},
+    ':root': {
+      fontSize: '10px',
+    },
   })
 )
 export default GlobalStyle

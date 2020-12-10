@@ -46,7 +46,7 @@ const theme = {
       lineHeight: 'heading',
       fontWeight: 'heading',
       color: 'heading',
-      fontSize: [3, 4, 5, 6, 7],
+      fontSize: [2, 3, 3, 4],
     },
     display: {
       fontFamily: 'heading',
@@ -68,6 +68,12 @@ const theme = {
     card: {
       p: 3,
       bg: 'middleground',
+    },
+    keyword: {
+      p: [1],
+      mr: [1],
+      my: [1],
+      bg: 'foreground',
     },
     link: {
       color: 'primary',

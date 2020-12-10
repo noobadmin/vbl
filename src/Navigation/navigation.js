@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <S.Flex>
       <Link as={RouterLink} variant="nav" to="/">
-        PaNOSC
+        Virtual Beamline
       </Link>
       <Box mx="auto" />
       {/* <Link as={RouterLink} variant="nav" to="/dashboard"> */}
@@ -26,8 +26,13 @@ export default Navigation
 const S = {}
 
 S.Flex = styled(Flex).attrs({
-  bg: 'middleground',
-  height: 'nav',
+  sx: {
+    bg: 'middleground',
+    height: 'nav',
+    position: 'sticky',
+    top: 0,
+    left: 0,
+  },
 })``
 
 S.SidebarControlls = styled(Link).attrs({

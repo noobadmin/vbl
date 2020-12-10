@@ -22,6 +22,7 @@ const useScrollPos = loading => {
 
   useEffect(() => {
     window.scrollTo(0, scrollPos)
+    console.log(`Im scrolling to ${scrollPos}`)
   }, [scrollPos, loading])
 }
 
