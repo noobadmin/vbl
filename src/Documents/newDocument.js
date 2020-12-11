@@ -42,32 +42,39 @@ const Document = ({document, index}) => {
       </Box>
       <Card width={[1, 1 / 2, 2 / 3, 3 / 4]}>
         <HeadingLink pid={index} title={document.title} />
-        <Flex flexWrap="wrap">
-          {Array.isArray(document.keywords) ? (
-            document.keywords.map((str, index) => (
-              <Card key={index} variant="keyword">
-                {str}
-              </Card>
-            ))
-          ) : (
-            <Card variant="keyword">{document.keywords}</Card>
-          )}
-        </Flex>
-        <Text>{document.description}</Text>
         <Flex
           sx={{
-            flexWrap: 'wrap',
-            width: '100%',
-            mt: [1, 2],
-            ml: [-2, -3],
-            mr: [-1, -2],
+            flexDirection: 'column',
+            justifyContent: 'space-between',
           }}
         >
-          <MetaItem caption="Data Type" data={document.datatype} />
-          <MetaItem
-            caption="Last Update"
-            data={parseDate(document.lastupdate)}
-          />
+          <Flex flexWrap="wrap">
+            {Array.isArray(document.keywords) ? (
+              document.keywords.map((str, index) => (
+                <Card key={index} variant="keyword">
+                  {str}
+                </Card>
+              ))
+            ) : (
+              <Card variant="keyword">{document.keywords}</Card>
+            )}
+          </Flex>
+          <Text>{document.description}</Text>
+          <Flex
+            sx={{
+              flexWrap: 'wrap',
+              width: '100%',
+              mt: [1, 2],
+              ml: [-2, -3],
+              mr: [-1, -2],
+            }}
+          >
+            <MetaItem caption="Data Type" data={document.datatype} />
+            <MetaItem
+              caption="Last Update"
+              data={parseDate(document.lastupdate)}
+            />
+          </Flex>
         </Flex>
       </Card>
     </Flex>

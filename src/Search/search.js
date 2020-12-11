@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 import {useSearchStore} from '../App/stores'
 import documents from '../data.json'
-import {Heading, Box, Card} from '../Primitives'
+import {Flex, Box, Card} from '../Primitives'
 
 const Search = () => {
   const [vis, setVis] = useState()
@@ -72,12 +72,15 @@ const Search = () => {
     throttled(value)
   }
   return (
-    <Box>
-      <Heading>Search</Heading>
+    <Flex
+      sx={{
+        flexDirection: 'column',
+        gap: [2, 3, 3, 4],
+      }}
+    >
       <Card as="form" onSubmit={e => e.preventDefault()}>
         <Input onChange={typing} placeholder="Search in Titles" />
       </Card>
-      <br />
       <Card>
         Data Types:
         {datatypes.map((filter, index) => (
@@ -89,7 +92,6 @@ const Search = () => {
           />
         ))}
       </Card>
-      <br />
       <Card>
         Visualisation Types:
         {vistypes.map((filter, index) => (
@@ -101,7 +103,7 @@ const Search = () => {
           />
         ))}
       </Card>
-    </Box>
+    </Flex>
   )
 }
 
@@ -111,6 +113,6 @@ const S = {}
 S.Card = styled(Card)`
   background: ${props =>
     props.highlighted
-      ? props.theme.colors.middleground
+      ? props.theme.colors.background
       : props.theme.colors.foreground};
 `

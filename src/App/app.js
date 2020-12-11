@@ -17,9 +17,9 @@ import Spinner from './spinner'
 const App = () => {
   const {isDark} = useContext(ThemeModeContext)
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={isDark ? dark : light}>
       <Global />
-      <Box mb={[2, 3, 3, 4]} as="nav" sx={{position: 'sticky', top: 0}}>
+      <Box mb={[4, 5]} as="nav" sx={{position: 'sticky', top: 0}}>
         <Navigation />
       </Box>
       <Box mx={[0, 2, 3, 4]}>

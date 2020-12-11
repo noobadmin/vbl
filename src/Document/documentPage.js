@@ -15,12 +15,16 @@ const DocumentPage = props => {
   return (
     <ErrorBoundary>
       <Suspense fallback={<Spinner />}>
-        <Heading>{data.title}</Heading>
-        <Flex sx={{flexWrap: 'wrap'}}>
-          <Box mb={[2, 3, 0]} width={[1, 1, 1 / 2]}>
+        <Heading variant="display">{data.title}</Heading>
+        <Flex sx={{flexWrap: ['wrap', 'wrap', 'nowrap'], gap: [2, 3, 3, 4]}}>
+          <Box
+            mb={[2, 3, 0]}
+            lineHeight={[1.5, 1.5, 1.75]}
+            width={[1, 1, 1 / 2]}
+          >
             <Document data={data} />
           </Box>
-          <Box pl={[0, 0, 3]} width={[1, 1, 1 / 2]}>
+          <Box width={[1, 1, 1 / 2]}>
             <Card>
               <Heading>Preview Visualisation</Heading>
               <Box mx={-3} mt={3} mb={-3}>

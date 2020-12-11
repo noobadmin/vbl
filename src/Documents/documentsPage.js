@@ -16,10 +16,11 @@ const DocumentsPage = props => {
       <Suspense fallback={<Spinner />}>
         <Layout>
           <Side show={show === 'search' ? true : false}>
+            <Heading variant="display">Search</Heading>
             <Search />
           </Side>
           <Main show={!show}>
-            <Heading>Library</Heading>
+            <Heading variant="display">Library</Heading>
             <DocumentsList show={!show} />
           </Main>
         </Layout>
@@ -53,7 +54,7 @@ export default DocumentsPage
 
 const Layout = styled(Flex).attrs({
   sx: {
-    gap: [2, 3, 3],
+    gap: [2, 3, 3, 4],
   },
 })``
 const Main = styled(Box).attrs({

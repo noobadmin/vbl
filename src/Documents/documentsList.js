@@ -17,7 +17,7 @@ const DocumentsList = show => {
         <Flex
           sx={{
             flexDirection: 'column',
-            gap: 4,
+            gap: [2, 3, 3, 4],
           }}
         >
           {documents.map((document, index) => (
