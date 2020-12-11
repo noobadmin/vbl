@@ -111,6 +111,13 @@ export default Search
 
 const S = {}
 S.Card = styled(Card)`
+  :hover {
+    cursor: pointer;
+    background: ${props =>
+      props.highlighted
+        ? props.theme.colors.background
+        : props.theme.colors.middleground};
+  }
   background: ${props =>
     props.highlighted
       ? props.theme.colors.background
