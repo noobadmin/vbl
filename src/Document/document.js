@@ -40,7 +40,9 @@ const Document = ({data}) => {
         </Detail>
         <Detail caption="Keywords">{ifArray(data.keywords)}</Detail>
         <Detail caption="Visualisation Link">
-          <Link href={data.vbllink}> {data.vbllink}</Link>
+          <Link target="_blank" href={data.vbllink}>
+            {data.vbllink}
+          </Link>
         </Detail>
       </Details>
     </Box>
