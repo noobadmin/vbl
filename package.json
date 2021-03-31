@@ -2,7 +2,7 @@
   "name": "panosc-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://git.eli-beams.eu/public/vbl"
+  "homepage" : "https://git.eli-beams.eu/public/vbl",
   "dependencies": {
     "@emotion-icons/remix-line": "^2.10.0",
     "@react-keycloak/web": "^2.1.4",
