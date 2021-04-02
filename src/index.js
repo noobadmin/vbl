@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ErrorBoundary>
       <ThemeModeProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <App />
         </BrowserRouter>
       </ThemeModeProvider>
