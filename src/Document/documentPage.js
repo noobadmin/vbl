@@ -30,7 +30,7 @@ const DocumentPage = props => {
               <Box mx={-3} mt={3} mb={-3}>
                 <Image
                   sx={{display: 'block', width: '100%', height: '100%'}}
-                  src={`/images/${data.image}`}
+                  src={`./images/${data.image}`}
                 />
               </Box>
             </Card>
