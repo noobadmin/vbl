@@ -36,7 +36,7 @@ const Document = ({document, index}) => {
               width: '100%',
               height: '100%',
             }}
-            src={`/images/${document.image}`}
+            src={`./images/${document.image}`}
           />
         </AspectBox>
       </Box>
